@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./scripts/main.js"></script>
+</head>
+<body>
+    <header></header>
+    <main id="container">
+        <h2>Daily Journal</h2>
+            <form class="entryForm">
+                <fieldset>
+                    <label for="entryDate">Date</label>
+                    <input type="date" name="entryDate" class="entry entryForm__date">
+                </fieldset>
+                <fieldset>
+                    <lable for="conceptsCovered">Concepts covered</lable>
+                    <input type="text" name="conceptsCovered" class="entry entryForm_concept"> 
+                </fieldset>
+                <fieldset>
+                    <lable for="journalEntry">Journal Entry</lable>
+                    <textarea type="textarea" name="journalEntry" class="entry entryForm_journal" rows="2" cols="20"></textarea> 
+                </fieldset>
+                <fieldset>
+                    <lable for="moodToday">Mood for the day</lable>
+                    <select type="dropdown" class="entry entryForm_mood" name="mood_list">
+                    <option name="mood" class="mood">Choose Mood</option>
+                    <option name="mood" class="mood">Sad</option> 
+                    <option name="mood" class="mood">Happy</option> 
+                    <option name="mood" class="mood">Ok</option>
+                    <option name="mood" class="mood">Frustrated</option> 
+                    <option name="mood" class="mood">Curious</option> 
+                    </select>
+                </fieldset>
+
+                <button class="button" id="postEntry">Record Journal Entry</button>
+            </form>
+        
+        
+            <article id="entries"></article>
+
+    </main>
+    
+    <footer></footer>
+</body>
+</html>
