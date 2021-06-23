@@ -1,9 +1,16 @@
 import {Entries} from "./Entries.js"
+import {JournalForm} from "./JournalForm.js"
 
 export const DailyJournal = () => {
     return `
-    <div class="entryList">
-    ${ Entries() }
-    </div>
+        <h1>Daily Journal</h1>
+        <article class="entryForm">
+            ${ JournalForm() } 
+        </article>
+
+        <div class="entryList">
+            ${ Entries() }
+        </div>
+
     `
 }

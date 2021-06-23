@@ -12,7 +12,8 @@ export const Entries = () => {
 
     for (const entry of entries) {
         allEntriesAsHTML += `
-        <br>   
+        <br> 
+        <h3> ${entry.concept}</h3>  
         <div> ${entry.entry}
         <br> ${entry.date}
         </div>
